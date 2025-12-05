@@ -286,3 +286,111 @@ body {
     font-style: normal;
 }
 
+.contact-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #97AAC6 0%, #73869e 100%);
+    padding: 60px 20px;
+    margin-top: 80px;
+}
+
+.contact-container {
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    text-align: center;
+    color: #151515;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    font-family: "Inter", sans-serif;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    padding: 15px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #97AAC6;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(151, 170, 198, 0.1);
+}
+
+.form-input::placeholder {
+    color: #999;
+}
+
+.submit-btn {
+    padding: 15px 30px;
+    background-color: #2D6AC8;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Inter", sans-serif;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #1e4a8a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(45, 106, 200, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(45, 106, 200, 0.2);
+}
+
+.response-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    display: none;
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 30px 20px;
+    }
+    
+    .contact-container h2 {
+        font-size: 22px;
+    }
+    
+    .contact-panel {
+        padding: 40px 15px;
+    }
+}
+
